@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Itinerary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+<!-- TOP NAVBAR -->
+<nav class="bg-white shadow px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+  <h1 class="text-2xl font-bold text-green-600">HiddenTrails.AI</h1>
+  <div class="space-x-6">
+    <a href="index.html" class="text-gray-600 hover:text-green-600">Home</a>
+    <a href="dashboard.html" class="text-gray-600 hover:text-green-600">Dashboard</a>
+    <a href="saved.html" class="text-gray-600 hover:text-green-600">Saved</a>
+    <a href="auth.html" class="bg-green-600 text-white px-4 py-2 rounded-lg">Logout</a>
+  </div>
+</nav>
+
+<!-- PAGE LAYOUT -->
+<div class="flex min-h-[calc(100vh-72px)]">
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 bg-white shadow p-5 space-y-4">
+    <a href="dashboard.html" class="block font-semibold text-green-600">🏠 Dashboard</a>
+    <a href="plantrips.html" class="block text-gray-700 hover:text-green-600">🧭 Plan Trip</a>
+    <a href="saved.html" class="block text-gray-700 hover:text-green-600">💾 Saved Trips</a>
+    <a href="rewards.html" class="block text-gray-700 hover:text-green-600">🎁 Rewards</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-1 p-8">
+    <div class="max-w-4xl mx-auto space-y-6">
+
+      <h2 class="text-3xl font-bold text-center">
+        Your AI-Generated Itinerary 🧠
+      </h2>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Day 1 – Arrival & Local Sightseeing</h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Arrival and hotel check-in</li>
+          <li>Visit nearby beach / market</li>
+          <li>Evening sunset point</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Day 2 – Adventure Day</h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Water sports / trekking</li>
+          <li>Local cuisine exploration</li>
+          <li>Night cultural show</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Day 3 – Hidden Gems</h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Hidden beach / village</li>
+          <li>Photography spots</li>
+          <li>Relaxation & shopping</li>
+        </ul>
+      </div>
+
+      <div class="flex justify-center gap-4 mt-6">
+        <a href="saved.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg">
+          Save Itinerary
+        </a>
+        <button class="bg-yellow-400 px-6 py-3 rounded-lg font-bold">
+          Regenerate AI 🔁
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+
+</body>
+
+
+</html>

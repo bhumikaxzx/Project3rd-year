@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saved Itineraries | HiddenTrails.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+<!-- TOP NAVBAR -->
+<nav class="bg-white shadow px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+  <h1 class="text-2xl font-bold text-green-600">HiddenTrails.AI</h1>
+  <div class="space-x-6">
+    <a href="index.html" class="text-gray-600 hover:text-green-600">Home</a>
+    <a href="dashboard.html" class="text-gray-600 hover:text-green-600">Dashboard</a>
+    <a href="saved.html" class="text-green-600 font-semibold">Saved</a>
+    <a href="auth.html" class="bg-green-600 text-white px-4 py-2 rounded-lg">Logout</a>
+  </div>
+</nav>
+
+<!-- PAGE LAYOUT -->
+<div class="flex min-h-[calc(100vh-72px)]">
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 bg-white shadow p-5 space-y-4">
+    <a href="dashboard.html" class="block text-gray-700 hover:text-green-600">🏠 Dashboard</a>
+    <a href="plantrips.html" class="block text-gray-700 hover:text-green-600">🧭 Plan Trip</a>
+    <a href="saved.html" class="block font-semibold text-green-600">💾 Saved Trips</a>
+    <a href="rewards.html" class="block text-gray-700 hover:text-green-600">🎁 Rewards</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-1 p-8">
+    <div class="max-w-4xl mx-auto space-y-6">
+
+      <h2 class="text-3xl font-bold text-center">Saved Itineraries</h2>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h3 class="text-xl font-bold">Goa Trip – 5 Days</h3>
+        <p class="text-gray-600">Budget: ₹30,000</p>
+        <a href="itinerary.html"
+           class="inline-block mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg">
+          View
+        </a>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h3 class="text-xl font-bold">Manali Trip – 4 Days</h3>
+        <p class="text-gray-600">Budget: ₹25,000</p>
+        <a href="itinerary.html"
+           class="inline-block mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg">
+          View
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>
